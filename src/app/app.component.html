@@ -1,5 +1,28 @@
 <router-outlet></router-outlet>
-<h1>Animal Paws Controller</h1>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@700&display=swap');
+</style>
+<header>
+<nav>
+   <div class="container">
+       <h1 id="an">Animal <span>Paws</span></h1>
+    <div class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Anuncios</a>
+        <a href="#">Adoptar</a>
+        <a href="#">Donar</a>
+    </div>
+    <button class="hamburguer is-active">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+   </div>
+</nav>
+</header>
 <section *ngFor="let anuncios of anuncios">
 <h3>{{anuncios.titulo}}</h3>
 <p>{{anuncios.descripcion}}</p>

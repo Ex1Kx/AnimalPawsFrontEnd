@@ -5,26 +5,31 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@700&display=swap');
 </style>
-<header>
-<nav>
-   <div class="container">
-       <h1 id="an">Animal <span>Paws</span></h1>
-    <div class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Anuncios</a>
-        <a href="#">Adoptar</a>
-        <a href="#">Donar</a>
-    </div>
-    <button class="hamburguer is-active">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-   </div>
-</nav>
-</header>
-<section *ngFor="let anuncios of anuncios">
-<h3>{{anuncios.titulo}}</h3>
-<p>{{anuncios.descripcion}}</p>
-<img src="{{anuncios.imagen}}" alt="un alien qliao">
-</section>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <h1 id="an">Animal<span>Paws</span></h1></li>
+        <li class="nav-item">
+          <a href="#" ><span>Inicio</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" id="an">Anuncios</a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><span>Adoptar</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="#"><span>Donar</span></a>
+        </li>
+      </ul>
+    </nav>
+    <section *ngFor="let anuncios of anuncios">
+        <h3><strong>{{anuncios.titulo}}</strong></h3>
+        <p>{{anuncios.descripcion}}</p>
+        <div class="ig"><img src="{{anuncios.imagen}}" alt="Animal Paws Post Image"></div>
+        </section>
+  </body>

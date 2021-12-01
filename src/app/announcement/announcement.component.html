@@ -1,0 +1,32 @@
+<router-outlet></router-outlet>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@700&display=swap');
+</style>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+  </head>
+  <body >
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <h1 id="an">Animal<span>Paws</span></h1></li>
+        <li class="nav-item">
+          <a routerLink="/home" ><span>Inicio</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" id="an">Anuncios</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about-us"><span>Sobre Nosotros</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div *ngFor="let anuncios of anuncios" class="all">
+        <h3><strong>{{anuncios.titulo}}</strong></h3>
+        <p>{{anuncios.descripcion}}</p>
+        <div class="ig"><img src="{{anuncios.imagen}}" alt="Animal Paws Post Image"></div>
+        </div>
+  </body>

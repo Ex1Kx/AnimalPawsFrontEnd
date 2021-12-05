@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { LoadScriptsService } from './load-scripts.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { AnnouncementComponent } from './announcement/announcement.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NofoundComponent } from './nofound/nofound.component';
-import { UploadComponent } from './upload/upload.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +20,19 @@ import { UploadComponent } from './upload/upload.component';
     AnnouncementComponent,
     AboutUsComponent,
     NofoundComponent,
-    UploadComponent
+    SignUpComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    LoadScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

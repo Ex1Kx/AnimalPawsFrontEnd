@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnunciosService } from '../services/anuncios.service';
+import { LoadScriptsService } from '../load-scripts.service';
 @Component({
   selector: 'app-announcement',
   templateUrl: './announcement.component.html',
@@ -10,8 +11,10 @@ export class AnnouncementComponent {
   
   public anuncios:Array<any> = []
   constructor(
-    private anunciosService:AnunciosService
+    private anunciosService:AnunciosService,
+    private _LoadScripts:LoadScriptsService
   ){
+    _LoadScripts.Carga(["announcement/function"])
   this.anunciosService.getAnuncios().subscribe((resp:any)=>{
   console.log(resp)
   this.anuncios=resp

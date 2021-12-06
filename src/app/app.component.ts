@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnunciosService } from './services/anuncios.service';
+import { AnnouncementComponent } from './announcement/announcement.component';
 
 @Component({
   selector: 'app-root',

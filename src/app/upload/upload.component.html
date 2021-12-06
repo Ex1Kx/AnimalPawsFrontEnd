@@ -1,0 +1,7 @@
+<h1>Prueba Rapida</h1>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <input type="text" name="titulo" placeholder="Titulo" ngModel> <br>
+    <input type="text" name="descripcion" placeholder="Descripcion" ngModel> <br>
+    <input type="text" name="imagen" placeholder="Imagen" ngModel> <br>
+    <button type="submit">Crear Anuncio</button>
+</form>

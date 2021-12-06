@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadScriptsService } from '../load-scripts.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _LoadScripts:LoadScriptsService
+  ) { 
+    _LoadScripts.Carga(["login/function"])
+  }
 
   ngOnInit(): void {
   }

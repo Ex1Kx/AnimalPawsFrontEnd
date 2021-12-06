@@ -1,43 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<h2>Unete A Animal Paws</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-</head>
-<body>
-    <div class="split-screen">
-        <div class="left">
-        <section class="copy">
-            <img src="https://media.discordapp.net/attachments/907641343185137740/914738953431687208/AnimalPawsLogo.png?width=349&height=349" alt="">
-            <h1 id="first">Por Nosotros Para Ellos</h1>
-        </section>
-    </div>
-    <div class="right">
-        <form>
-            <section class="copy">
-                <h2>Registrate</h2>
-                <div class="login-container">
-                    <p>¿Aun No Tienes Cuenta De Animal Paws?</p>
-                    <p><strong><a routerLink="/sign-up" id="">Registrate</a></strong></p>
-                </div>
-            </section>
-            <div class="input-conatiner enail">
-                <label for="email">Email</label>
-                <input id="email" class="blocked" name="email" type="email">
-            </div>
-            <div class="input-conatiner password">
-                <label for="password">Contraseña</label>
-                <input id="password" name="password" type="password" class="blocked">
-            </div>
-            <div class="input-container cta">
-            </div>
-            <button class="signup-btn" type="submit">Inicia Sesion</button>
-        </form>
-        </div>
-    </div>
-</body>
-</html>
+		<form action="#">
+			<h1>Crea Tu Cuenta</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+			</div>
+			<span>O Puedes Usar Tu Correo</span>
+			<input type="text" placeholder="Nombres" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Contraseña" />
+			<button class="reload">Registrate</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Inicia Sesion</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+			</div>
+			<span>O Utiliza Tu Cuenta</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Contraseña" />
+			<a href="#">¿Olvidaste Tu Contraseña?</a>
+			<button routerLink="/announcement">Inicia Sesion</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1 class="nover">Hola De Nuevo</h1>
+				<p>¿Ya Tienes Cuenta? Inicia Sesion Ahora</p>
+				<button class="ghost" id="signIn">Iniciar Sesion</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1 class="nover">Por Un Mejor Futuro</h1>
+				<p>Registrate Ahora En Animal Paws Con Tus Datos</p>
+				<button class="ghost" id="signUp">Registrate</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -13,6 +13,8 @@ import { NofoundComponent } from './nofound/nofound.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { UploadComponent } from './upload/upload.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { UploadComponent } from './upload/upload.component';
     NofoundComponent,
     SignUpComponent,
     LoginComponent,
-    UploadComponent
+    UploadComponent,
+    ProfileComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

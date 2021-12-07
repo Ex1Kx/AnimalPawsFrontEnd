@@ -7,6 +7,8 @@ import { NofoundComponent } from './nofound/nofound.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { UploadComponent } from './upload/upload.component';
+import { NewsComponent } from './news/news.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'sign-up', component:SignUpComponent},
   {path: 'login', component:LoginComponent},
   {path: 'upload', component:UploadComponent},
+  {path: 'news', component:NewsComponent},
+  {path: 'profile', component:ProfileComponent},
   {path: '**', component:NofoundComponent}
 ];
 

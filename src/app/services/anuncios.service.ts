@@ -23,4 +23,8 @@ return this.http.get(this._url, {
   headers: header
 });
   }
+  deleteAnuncio(id: string):Observable<{}>{
+    this._url = `${this._url}/${id}`;
+    return this.http.delete(this._url);
+  }
 }

@@ -20,4 +20,9 @@ export class AnnouncementComponent {
   this.anuncios=resp
   })
 }
+  onDeleteAnuncio():void{
+    const myAnuncio = {id: "12, 13, 14, 15, 16",}
+    this.anunciosService.deleteAnuncio(myAnuncio.id).subscribe();
+    this.anuncios = this.anuncios.filter( c => c.id != myAnuncio.id);
+  }
 }

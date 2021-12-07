@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { UploadComponent } from './upload/upload.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NewsComponent } from './news/news.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NewsComponent } from './news/news.component';
     LoginComponent,
     UploadComponent,
     ProfileComponent,
-    NewsComponent
+    NewsComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

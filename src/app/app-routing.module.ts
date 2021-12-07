@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { UploadComponent } from './upload/upload.component';
 import { NewsComponent } from './news/news.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'upload', component:UploadComponent},
   {path: 'news', component:NewsComponent},
   {path: 'profile', component:ProfileComponent},
+  {path: 'update', component:UpdateComponent},
   {path: '**', component:NofoundComponent}
 ];
 

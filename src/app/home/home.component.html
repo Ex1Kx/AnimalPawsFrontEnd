@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="hero">
+    <header>
+    <div>
+        <h1 class="APL">ANIMAL PAWS</h1>
+    </div>
+    <div class="DIVAP">
         <nav>
-            <h1>Animal<span>Paws</span></h1>
             <ul>
-                <li><a href="#">{{"Home" | translate}}</a></li>
-                <li><a routerLink="/about-us">{{"About-us" | translate}}</a></li>
-                <li><a routerLink="/news">{{"News" | translate}}</a></li>
-                <li><a routerLink="/login">{{"Login" | translate}}</a></li>
+                <li><fa-icon [icon]="faHouse"></fa-icon><a href="#">{{"Home" | translate}}</a></li>
+                <li><fa-icon [icon]="faInfo"></fa-icon><a routerLink="/about-us">{{"About-us" | translate}}</a></li>
+                <li><fa-icon [icon]="faNewspaper"></fa-icon><a routerLink="/news">{{"News" | translate}}</a></li>
+                <li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
             </ul>
         </nav>
-        <div class="detel">
-            <h1>{{"LFU" | translate}} <span>{{"LFUF" | translate}}</span></h1>
-            <p>{{"BJDA" | translate}}<br>{{"BDJAS" | translate}}</p>
-            <a routerLink="/login">{{"BTNLOG" | translate}}</a>
-        </div>
-        <div class="images">
-            <img src="https://media.discordapp.net/attachments/907641343185137740/917216633347510323/shape.png?width=414&height=468" class="shape">
-            <img src="https://pngimg.com/uploads/dog/dog_PNG50374.png" class="girl">
-        </div>
-
-        <div class="social">
-           <a href="https://www.facebook.com/AnimalPawsColombia"><i class="fab fa-facebook"></i></a>
-           <a href="https://twitter.com/Ex1Kx"><i class="fab fa-twitter"></i></a>
-           <a href="https://github.com/Ex1Kx/AnimalPawsBackEnd.cs"><i class="fab fa-github"></i></a>
-        </div>
     </div>
+</header>
+<main>   
+    <img src="https://cdn.discordapp.com/attachments/925024576210083882/950187068141744190/background.png" alt="" class="IMGMAIN">
+    <h1 class="FUTLO">A New Future</h1>
+</main>
 </body>
 </html>
             

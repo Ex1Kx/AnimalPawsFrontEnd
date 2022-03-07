@@ -4,6 +4,7 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { LoadScriptsService } from './load-scripts.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 export function HttpLoaderFactory(http: HttpClient){
   return new  TranslateHttpLoader(http, './assets/lang/', '.json')
 }
@@ -42,6 +43,7 @@ import { UpdateComponent } from './update/update.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     TranslateModule.forRoot({
       loader:{
         provide: TranslateLoader,

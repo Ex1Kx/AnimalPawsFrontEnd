@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { LoadScriptsService } from './load-scripts.service';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+export function HttpLoaderFactory(http: HttpClient){
+  return new  TranslateHttpLoader(http, './assets/lang/', '.json')
+}
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +22,9 @@ import { UploadComponent } from './upload/upload.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NewsComponent } from './news/news.component';
 import { UpdateComponent } from './update/update.component';
+import { FundInfoComponent } from './fund-info/fund-info.component';
+import { FundNewsComponent } from './fund-news/fund-news.component';
+import { FundProfileComponent } from './fund-profile/fund-profile.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +38,25 @@ import { UpdateComponent } from './update/update.component';
     UploadComponent,
     ProfileComponent,
     NewsComponent,
-    UpdateComponent
+    UpdateComponent,
+    FundInfoComponent,
+    FundNewsComponent,
+    FundProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     LoadScriptsService

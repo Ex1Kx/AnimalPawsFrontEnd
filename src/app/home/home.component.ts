@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,14 +13,15 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HomeComponent implements OnInit {
   faHouse = faHouse;
-  faInfo = faInfo;
+  faAddressCard = faAddressCard;
   faNewspaper = faNewspaper;
   faUser = faUser;
+  faEyeSlash = faEyeSlash;
 
   constructor(public translate:TranslateService) {
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('es');
-    this.translate.use('es');
+    this.translate.use('en');
    }
 
   ngOnInit(): void {

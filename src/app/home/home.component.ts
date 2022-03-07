@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   constructor(public translate:TranslateService) {
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('es');
-    this.translate.use('en');
+    this.translate.use('es');
    }
 
   ngOnInit(): void {

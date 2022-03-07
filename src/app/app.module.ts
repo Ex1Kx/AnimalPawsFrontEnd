@@ -22,6 +22,9 @@ import { UploadComponent } from './upload/upload.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NewsComponent } from './news/news.component';
 import { UpdateComponent } from './update/update.component';
+import { FundInfoComponent } from './fund-info/fund-info.component';
+import { FundNewsComponent } from './fund-news/fund-news.component';
+import { FundProfileComponent } from './fund-profile/fund-profile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { UpdateComponent } from './update/update.component';
     UploadComponent,
     ProfileComponent,
     NewsComponent,
-    UpdateComponent
+    UpdateComponent,
+    FundInfoComponent,
+    FundNewsComponent,
+    FundProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -10,10 +10,13 @@ import { UploadComponent } from './upload/upload.component';
 import { NewsComponent } from './news/news.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UpdateComponent } from './update/update.component';
+import { FundInfoComponent } from './fund-info/fund-info.component';
+import { FundNewsComponent } from './fund-news/fund-news.component';
+import { FundProfileComponent } from './fund-profile/fund-profile.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
+  {path:'', redirectTo: '/Home', pathMatch: 'full'},
+  {path: 'Home', component: HomeComponent},
   {path: 'announcement', component: AnnouncementComponent},
   {path: 'about-us', component:AboutUsComponent},
   {path: 'sign-up', component:SignUpComponent},
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path: 'news', component:NewsComponent},
   {path: 'profile', component:ProfileComponent},
   {path: 'update', component:UpdateComponent},
+  {path: 'FundationInfo', component:FundInfoComponent},
+  {path: 'FundationNews', component:FundNewsComponent},
+  {path: 'FundationProfile', component:FundProfileComponent},
   {path: '**', component:NofoundComponent}
 ];
 

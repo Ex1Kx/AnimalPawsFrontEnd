@@ -24,6 +24,14 @@ li{
   display: inline-block;
   padding: 1%;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+  padding:  6px;
+}
+nav ul li a:hover{
+  color: #209dcb;
+}
 .DIVAP{
   text-align: center;
   text-decoration: none;

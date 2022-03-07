@@ -7,16 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-  <div class="hero">
-    <nav>
-        <h1>Animal<span>Paws</span></h1>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a routerLink="/about-us">Sobre Nosotros</a></li>
-            <li><a routerLink="/news">Noticias</a></li>
-            <li><a routerLink="/login">Inicia Sesion</a></li>
-        </ul>
-    </nav>
+  <header>
+    <div>
+        <h1 class="APL">ANIMAL PAWS</h1>
+    </div>
+    <div class="DIVAP">
+        <nav>
+            <ul>
+                <li><fa-icon [icon]="faHouse"></fa-icon><a routerLink="/Home">{{"Home" | translate}}</a></li>
+                <li><fa-icon [icon]="faInfo"></fa-icon><a routerLink="/about-us">{{"About-us" | translate}}</a></li>
+                <li><fa-icon [icon]="faNewspaper"></fa-icon><a routerLink="/news">{{"News" | translate}}</a></li>
+                <li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
     <div class="container">
         <div class="card">
           <div class="box">

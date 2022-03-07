@@ -25,6 +25,7 @@ import { UpdateComponent } from './update/update.component';
 import { FundInfoComponent } from './fund-info/fund-info.component';
 import { FundNewsComponent } from './fund-news/fund-news.component';
 import { FundProfileComponent } from './fund-profile/fund-profile.component';
+import { PreviewComponent } from './preview/preview.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FundProfileComponent } from './fund-profile/fund-profile.component';
     UpdateComponent,
     FundInfoComponent,
     FundNewsComponent,
-    FundProfileComponent
+    FundProfileComponent,
+    PreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
-
+import { from } from 'rxjs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

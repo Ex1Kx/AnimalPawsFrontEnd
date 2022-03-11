@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="hero">
+    <header>
+    <div>
+        <h1 class="APL">ANIMAL PAWS</h1>
+    </div>
+    <div class="DIVAP">
         <nav>
-            <h1>Animal<span>Paws</span></h1>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a routerLink="/about-us">Sobre Nosotros</a></li>
-                <li><a routerLink="/news">Noticias</a></li>
-                <li><a routerLink="/login">Inicia Sesion</a></li>
+                <li><fa-icon [icon]="faHouse"></fa-icon><a routerLink="/Home">{{"Home" | translate}}</a></li>
+                <li><fa-icon [icon]="faAddressCard"></fa-icon><a routerLink="/About">{{"About-us" | translate}}</a></li>
+                <li><fa-icon [icon]="faNewspaper"></fa-icon><a routerLink="/news">{{"News" | translate}}</a></li>
+                <li><fa-icon [icon]="faEyeSlash"></fa-icon><a routerLink="/login">{{"Preview" | translate}}</a></li>
+                <li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
             </ul>
         </nav>
-        <div class="detel">
-          <h1>Sobre<span> Nosotros</span></h1>
-          <p>Animal Paws es un proyecto llevado a cabo sin fines de lucro para brindar soporte a varias <br> empresas protectoras de animales y veterinarias para hacer más fácil y cómodo los procesos <br> de adopción y de donación a animales callejeros o sin hogar con sede en el sur de Armenia Quindío. <br>
-            La sección acerca de nosotros se destaca para mostrar los distintos servicios que brindamos a los diferentes <br> sectores. 
-            Brindamos servicio a las empresas y veterinarias las cuales están dispuestas a publicar y tener un <br> mayor alcance en cuanto a sus servicios de adopción sin ninguna comisión de por medio. 
-            Brindamos servicios <br> de adopción y de donación a las personas las cuales quieran contribuir a las empresas o veterinarias para que<br> sus servicios se vean mas beneficiados.</p>
-            <div>
-              <h1 id="del">l</h1>
-              <h1>Mision</h1>
-              <img src="https://media.discordapp.net/attachments/907641343185137740/917639477109882960/MISION.png?width=880&height=440" alt="">
-              <h1 id="del">l</h1>
-              <h1>Vision</h1>
-              <img src="https://media.discordapp.net/attachments/907641343185137740/917639790898319400/VISION.png?width=880&height=440" alt="">
-            </div>
-      </div>
-      
+    </div>
+</header>
+<main>
+    <img src="https://media.discordapp.net/attachments/925024576210083882/951573469513023618/Main.png?width=1232&height=616" alt="AIMG" class="AUMAIN">
+</main>

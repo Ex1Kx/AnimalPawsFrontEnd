@@ -8,7 +8,7 @@
 <body>
     <header>
     <div>
-        <h1 class="APL">ANIMAL PAWS</h1>
+        <h1 class="APL">ANIMAL <span>PAWS</span></h1> <hr>
     </div>
     <div class="DIVAP">
         <nav>
@@ -19,45 +19,15 @@
                 <li><fa-icon [icon]="faEyeSlash"></fa-icon><a routerLink="/login">{{"Preview" | translate}}</a></li>
                 <li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
             </ul>
-        </nav>
+        </nav> <hr>
     </div>
 </header>
 <main>   
-    <img src="https://cdn.discordapp.com/attachments/925024576210083882/950187068141744190/background.png" alt="" class="IMGMAIN">
-    <h1 class="FUTLO">{{"AFTU" | translate}}</h1>
-    <h5 class="FUTLOH">{{"WITTH" | translate}}</h5>
-    <h5 class="FUTTLOH">{{"FUTTLOH" | translate}}</h5>
-    <div id="btn1"><button class="button" style="vertical-align:middle"><span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">{{"BTNDA" | translate}}</a></span></button></div>
+   <div class="right">
+    <h1>{{"AFTU"  | translate}}</h1>
+    <h1>{{"WITTH"  | translate}}</h1>
+</div>
+<div class="left"></div>
 </main>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <h1>Animal Paws</h1>
-                    <p class="APLOO">{{"COPP" | translate}}</p>
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>{{"SERV" | translate}}</h2>
-            <p>{{"ADOP"| translate}}</p>
-            <p>{{"BOST" |translate}}</p>
-            <p>{{"FUD" | translate}}</p>
-        </div>
-        <div class="box">
-            <h2>{{"FOLLOW" | translate}}</h2>
-            <div class="red-social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2022 <b>Neoritic Jac Devs</b>{{"COPY" | translate}}</small>
-    </div>
-</footer>
 </body>
 </html>

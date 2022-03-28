@@ -16,7 +16,7 @@ export class AnnouncementComponent {
   ){
     _LoadScripts.Carga(["announcement/function"])
   this.anunciosService.getAnuncios().subscribe((resp:any)=>{
-  console.log(resp)
+  console.log(resp) 
   this.anuncios=resp
   })
 }

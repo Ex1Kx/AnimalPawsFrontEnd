@@ -5,6 +5,7 @@ import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { CargarScriptsService } from '../Cargar-Scripts-service';
 
 @Component({
   selector: 'app-login',
@@ -19,10 +20,9 @@ export class LoginComponent implements OnInit {
   faEyeSlash = faEyeSlash;
 
 
-  constructor(
-    private _LoadScripts:LoadScriptsService
-  ) { 
-    _LoadScripts.Carga(["login/function"])
+  constructor(private _LoadScripts:LoadScriptsService, private _CargarScripts: CargarScriptsService) { 
+    _LoadScripts.Carga(["login/function"]),
+    _CargarScripts.Carga(["home/index"])
   }
 
   ngOnInit(): void { 

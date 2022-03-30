@@ -207,6 +207,26 @@ main{
   }
 }
 
+@media screen and (max-width:1499px){
+  .button{
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width:1331px){
+  .button{
+    margin-top: -100px;
+  }
+
+  .FUTLO{
+    margin-top: -100px;
+  }
+
+  .FUTLOH{
+    margin-top: -100px;
+  }
+}
+
 @media screen and (max-width:1166px){
   #btn1{
     border: 1px solid rgba(42, 42, 42, 0);

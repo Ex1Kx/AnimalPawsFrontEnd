@@ -21,5 +21,5 @@ describe('NewsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
+  }); 
 });

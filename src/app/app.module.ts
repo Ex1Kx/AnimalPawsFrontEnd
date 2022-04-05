@@ -9,6 +9,8 @@ export function HttpLoaderFactory(http: HttpClient){
   return new  TranslateHttpLoader(http, './assets/lang/', '.json')
 }
 
+import { CargarScriptsService } from './Cargar-Scripts-service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -61,7 +63,8 @@ import { PreviewComponent } from './preview/preview.component';
     })
   ],
   providers: [
-    LoadScriptsService
+    LoadScriptsService,
+    CargarScriptsService
   ],
   bootstrap: [AppComponent]
 })

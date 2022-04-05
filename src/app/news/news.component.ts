@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { CargarScriptsService } from '../Cargar-Scripts-service';
 
 @Component({
   selector: 'app-news',
@@ -11,11 +13,14 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class NewsComponent implements OnInit {
   faHouse = faHouse;
-  faInfo = faInfo;
+  faAddressCard = faAddressCard;
   faNewspaper = faNewspaper;
   faUser = faUser;
+  faEyeSlash = faEyeSlash;
 
-  constructor() { }
+  constructor(private _CargarScripts:CargarScriptsService) {
+    _CargarScripts.Carga(["home/index"])
+    }
 
   ngOnInit(): void {
   }

@@ -4,30 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
     <header>
-    <div>
-        <h1 class="APL">ANIMAL <span>PAWS</span></h1> <hr>
+    <div class="ani">
+        <h1 class="APL">ANIMAL PAWS</h1>
     </div>
     <div class="DIVAP">
         <nav>
-            <ul>
+            <ul class="ul show">
                 <li><fa-icon [icon]="faHouse"></fa-icon><a routerLink="/Home">{{"Home" | translate}}</a></li>
                 <li><fa-icon [icon]="faAddressCard"></fa-icon><a routerLink="/About">{{"About-us" | translate}}</a></li>
                 <li><fa-icon [icon]="faNewspaper"></fa-icon><a routerLink="/news">{{"News" | translate}}</a></li>
                 <li><fa-icon [icon]="faEyeSlash"></fa-icon><a routerLink="/login">{{"Preview" | translate}}</a></li>
                 <li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
             </ul>
-        </nav> <hr>
+        </nav>
     </div>
 </header>
 <main>   
-   <div class="right">
-    <h1>{{"AFTU"  | translate}}</h1>
-    <h1>{{"WITTH"  | translate}}</h1>
-</div>
-<div class="left"></div>
+    <video src="../../assets/img/Temp.mp4" class="IMGMAIN" autoplay></video>
+    <h1 class="FUTLO">{{"AFTU" | translate}}</h1>
+    <h5 class="FUTLOH">{{"WITTH" | translate}}</h5>
+    <h5 class="FUTTLOH">{{"FUTTLOH" | translate}}</h5>
+    <div id="btn1"><button class="button" style="vertical-align:middle"><span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">{{"BTNDA" | translate}}</a></span></button></div>
 </main>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="https://media.discordapp.net/attachments/925024576210083882/953467196112240640/LOGO_REWORKA.png?width=938&height=636" alt="" srcset="">
+                    <h1>Animal Paws</h1>
+                    <p class="APLOO">{{"COPP" | translate}}</p>
+                </a>
+            </figure>
+        </div>
+        <div class="box">   
+            <h2>{{"SERV" | translate}}</h2>
+            <p>{{"ADOP"| translate}}</p>
+            <p>{{"BOST" |translate}}</p>
+            <p>{{"FUD" | translate}}</p>
+        </div>
+        <hr class="hr1">
+        <div class="box boxcenter">
+            <h2 class="siguenos">{{"FOLLOW" | translate}}</h2>
+            <div class="red-social">
+                <a><fa-icon [icon]="faF"></fa-icon></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <hr class="hr1">
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Neoritic Jac Devs</b>{{"COPY" | translate}}</small>
+    </div>
+</footer>
 </body>
 </html>

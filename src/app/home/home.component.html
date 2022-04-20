@@ -12,28 +12,25 @@
     <div class="top-row">
       <div class="menu-wrap">
         <a href="#" class="menu-switcher" aria-label="Toggle main menu">
-          <i aria-hidden="true"></i>
-          <i aria-hidden="true"></i>
-          <i aria-hidden="true"></i>
         </a>
       </div>
       <div class="logo-wrap">
         <a href="#" class="logo">
-          <h1 class="aplogo">ANIMAL <span class="sp">PAWS</span></h1> 
+          <img class="logo" src="../../assets/img/logo.png" alt="AP LOGO">
         </a>
       </div>
       <nav class="top-row-toolbar">
-        <a href="#"><i class="icon-loupe"></i></a>
-        <a href="#"><i class="icon-play"></i></a>
-        <a routerLink="/SignUp"><i class="icon-user"></i></a>
+        <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
+        <a href="#"><fa-icon [icon]="faLanguage"></fa-icon></a>
+        <a routerLink="/SignUp"><fa-icon [icon]="faUser"></fa-icon></a>
       </nav>
     </div>
 
     <nav class="main-nav">
-      <a href="#">{{"UPD" | translate}}</a>
-      <a href="#">{{"FUN" | translate}}</a>
-      <a href="#">{{"AS" | translate}}</a>
-      <a href="#">{{"Preview" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
     </nav>
   </header>
 
@@ -112,24 +109,21 @@
               <a href="#"><img class="poster" src="../../assets/img/posts.png"></a>
             </div>
             <h3 class="post-title"><a href="#">{{"POS" | translate}}</a></h3>
-            <p>A multisensory feast featuring eight groundbreaking artists defining the future of Chinese art and culture</p>
+            <p>{{"POST" | translate}}</p>
           </li>
           <li class="article ">
             <div class="poster-container">
               <a href="#"><img class="poster"src="../../assets/img/roles.png"></a>
             </div>
-            <h3 class="post-title"><a href="https://www.nowness.com/story/without-a-word-youness-benali-dance">{{"ROL" | translate}}</a></h3>
-            <p>Director Youness Benali captures dancers freestyling in a concrete jungle</p>
+            <h3 class="post-title"><a href="#">{{"ROL" | translate}}</a></h3>
+            <p>{{"ROLE" | translate}}</p>
           </li>
           <li class="article">
             <div class="poster-container">
-              <a href="https://www.nowness.com/seasons/radically-queer/die-for-love-dilara-findikoglu-bunny-kinney"><img
-                  class="poster" src="../../assets/img/chat.png"></a>
+              <a href="#"><img class="poster" src="../../assets/img/chat.png"></a>
             </div>
-            <h3 class="post-title"><a
-                href="https://www.nowness.com/seasons/radically-queer/die-for-love-dilara-findikoglu-bunny-kinney">{{"CHAT" | translate}}</a></h3>
-            <p>Queer romance and nonconforming fashion get hitched in this collaboration between director Bunny Kinney
-              and outsider designer Dilara Findikoglu</p>
+            <h3 class="post-title"><a href="#">{{"CHAT" | translate}}</a></h3>
+            <p>{{"CHATS" | translate}}</p>
           </li>
         </ul>
       </div>
@@ -137,35 +131,30 @@
     <section class='award-winning'>
       <div class="container">
         <header class="module-header">
-          <h2 class>{{"VIDD" | translate}}</h2>  
+          <h2 class>{{"VIDD" | translate}}</h2>
           <span class="sub-title">{{"VIDL" | translate}}</span>
         </header>
         <ul class="articles">
           <li class="article">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="images/earth the unseen.jpg"></a>
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
               <span class="video-duration">03:47</span>
             </div>
             <h3 class="post-title"><a href="#">{{"VD" | translate}}</a></h3>
-            <p>Environmental activist Satish Kumar guides us on a journey that
-              surveys the grotesqueness and beauty of mankind’s interaction with the planet</p>
           </li>
           <li class="article">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="images/the rite.jpg"></a>
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
               <span class="video-duration">05:45</span>
             </div>
-            <h3 class="post-title"><a>{{"VDD" | translate}}</a></h3>
-            <p>Celebrate the 106th anniversary of Stravinsky’s The Rite of Spring with a group of
-              dancers with Down’s Syndrome who have captured the revolutionary spirit of the riot-inciting ballet</p>
+            <h3 class="post-title"><a>{{"VDDDD" | translate}}</a></h3>
           </li>
           <li class="article">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="images/nirvana.jpg"></a>
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
               <span class="video-duration">14:46</span>
             </div>
             <h3 class="post-title"><a href="#">{{"VDDD" | translate}}</a></h3>
-            <p>Finding community and empowerment at Asia’s largest gathering of transgender women</p>
           </li>
         </ul>
       </div>
@@ -178,7 +167,6 @@
         </header>
         <form>
           <input type="email" name="email" maxlength="40" required placeholder="Email">
-
           <div class="opt-in">
             <div>
               <input type="checkbox" id="toggle" class="checkbox" name="subscribe">
@@ -191,7 +179,7 @@
               <span>{{"SCSC" | translate}}</span>
             </div>
           </div>
-          <button class="base-btn newsletter-btn">Subscribe</button>
+          <button class="base-btn newsletter-btn">{{"SS" | translate}}</button>
         </form>
       </div>
     </section>
@@ -201,30 +189,27 @@
           <div class="editorial">
             <h2 class="module-header">{{"ML" | translate}}</h2>
             <div class="poster-container">
-              <a href="https://www.nowness.com/story/precious-adams-leonn-ward">
+              <a href="#">
                 <img class="poster" src="../../assets/img/paw.png">
               </a>
             </div>
-
-            <h3 class="post-title"><a href="https://www.nowness.com/story/precious-adams-leonn-ward">Patitas Al Rescate</a></h3>
-            <p>English National Ballet's rising star brings her youthful moves to the great outdoors</p>
+            <h3 class="post-title"><a href="#">Patitas Al Rescate</a></h3>
+            <p>{{"PP" | translate}}</p>
           </div>
         </div>
         <div class="second wrapper">
           <div class="editorial">
             <h2 class="module-header">{{"ASS" | translate}}</h2>
             <div class="poster-container">
-              <a href="https://www.nowness.com/seasons/china-wave/kiss-of-the-rabbit-god-andrew-thomas-huang">
+              <a href="#">
                 <img class="poster" src="../../assets/img/caty.png">
               </a>
             </div>
             <h3 class="post-title"><a
-                href="https://www.nowness.com/seasons/china-wave/kiss-of-the-rabbit-god-andrew-thomas-huang">Kiss of the
-                Rabbit God</a></h3>
-            <p>A young restaurant worker gets caught in a romantic tryst with a seductive Chinese deity</p>
+                href="#">Mr Rabbit God</a></h3>
+            <p>{{"HLP" | translate}}</p>
           </div>
         </div>
-
       </div>
     </section>
     <section class="follow-us">
@@ -242,11 +227,11 @@
               <a href='#' class="post-icon"><svg>
                   <use href="images/sprites.svg#facebook"></use>
                 </svg></a>
-              <p><a href="#">Our daily feed</a></p>
+              <p><a href="#">{{"FDD" | translate}}</a></p>
             </div>
-            <a class="base-btn post-btn" href='https://www.facebook.com/nowness' target='blank' rel='nofollow'>
+            <a class="base-btn post-btn" href='#' target='blank' rel='nofollow'>
               <div class='btn-link'>
-                <span>Like</span>
+                <span>{{"LK" | translate}}</span>
               </div>
             </a>
           </div>
@@ -263,12 +248,12 @@
               <a href="#" class="post-icon"><svg>
                   <use href="images/sprites.svg#youtube"></use>
                 </svg></a>
-              <p><a href="#"> Latest news.</a> </p>
+              <p><a href="#">{{"LT" | translate}}</a> </p>
             </div>
             <a class="base-btn post-btn" href='https://www.youtube.com/user/nowness?sub_confirmation=1' target="blank"
               rel='nofollow'>
               <div class='btn-link'>
-                <span>Follow</span>
+                <span>{{"FL" | translate}}</span>
               </div>
             </a>
           </div>
@@ -280,12 +265,12 @@
         <div class="wrapper">
           <div class="col">
             <h2 class="title">{{"SUS" | translate}}</h2>
-            <button class="base-btn post-btn">Become a Animal Paws member</button>
-            <p class="small-text">Already a member? <a href="#" class="gold">Sign in</a>
+            <button class="base-btn post-btn">{{"MB" | translate}}</button>
+            <p class="small-text">{{"AMB" | translate}}<a href="#" class="gold"> {{"SG" | translate}}</a>
             </p>
           </div>
           <div class="col connect media">
-            <h2 class="title">Connect with A.P</h2>
+            <h2 class="title">{{"CN" | translate}}</h2>
             <ul>
               <li>
                 <a href="#"><svg>
@@ -379,13 +364,13 @@
       </ul>
       <div class="footer-nav-container">
         <nav class="footer-nav">
-          <a href="#">become a member</a>
-          <a href="#">about us</a>
-          <a href="#">contact us</a>
-          <a href="#">privacy</a>
-          <a href="#">terms of service</a>
-          <a href="#">become a contributor</a>
-          <a href="#">Boosted</a>
+          <a href="#">{{"BCM" | translate}}</a>
+          <a href="#">{{"AUS" | translate}}</a>
+          <a href="#">{{"CUS" | translate}}</a>
+          <a href="#">{{"PRV" | translate}}</a>
+          <a href="#">{{"TRM" | translate}}</a>
+          <a routerLink="/Contribuitor">{{"CTR" | translate}}</a>
+          <a href="#">{{"VDDD" | translate}}</a>
         </nav>
       </div>
       <ul class="footer-bottom">
@@ -393,9 +378,9 @@
           <a href="#">Ⓒ 2022 Animal Paws</a>
         </li>
         <li>
-          <a href="#">Ⓒ 2022 Neoritic Jac Devs. ALL RIGHTS RESERVED.</a>
+          <a href="#">Ⓒ 2022 Neoritic Jac Devs. {{"COPY" | translate}}</a>
         <li>
-          <a href="https://github.com/nataliakiselev">Design By Natalia Kiselev</a>
+          <a href="https://github.com/nataliakiselev">{{"DSG" | translate}} Natalia Kiselev</a>
         </li>
       </ul>
     </div>

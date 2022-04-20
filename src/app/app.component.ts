@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(public translate:TranslateService, private anunciosService:AnunciosService) {
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.use('es');
     this.anunciosService.getAnuncios().subscribe((resp: any)=>{
       console.log(resp)
       this.anuncios=resp

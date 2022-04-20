@@ -13,7 +13,7 @@ import { UpdateComponent } from './update/update.component';
 import { FundInfoComponent } from './fund-info/fund-info.component';
 import { FundNewsComponent } from './fund-news/fund-news.component';
 import { FundProfileComponent } from './fund-profile/fund-profile.component';
-import { ContributorComponent } from './contributor/contributor.component';
+import { ContribuitorComponent } from './contribuitor/contribuitor.component';
 
 const routes: Routes = [
   {path:'', redirectTo: '/Home', pathMatch: 'full'},
@@ -26,10 +26,10 @@ const routes: Routes = [
   {path: 'news', component:NewsComponent},
   {path: 'profile', component:ProfileComponent},
   {path: 'update', component:UpdateComponent},
+  {path: 'Contribuitor', component:ContribuitorComponent},
   {path: 'FundationInfo', component:FundInfoComponent},
   {path: 'FundationNews', component:FundNewsComponent},
   {path: 'FundationProfile', component:FundProfileComponent},
-  {path: 'contributor', component:ContributorComponent},
   {path: '**', component:NofoundComponent}
 ];
 

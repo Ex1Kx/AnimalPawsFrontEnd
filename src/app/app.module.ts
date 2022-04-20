@@ -29,7 +29,7 @@ import { FundNewsComponent } from './fund-news/fund-news.component';
 import { FundProfileComponent } from './fund-profile/fund-profile.component';
 import { PreviewComponent } from './preview/preview.component';
 import { IntroComponent } from './intro/intro.component';
-import { ContributorComponent } from './contributor/contributor.component';
+import { ContribuitorComponent } from './contribuitor/contribuitor.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,7 @@ import { ContributorComponent } from './contributor/contributor.component';
     FundProfileComponent,
     PreviewComponent,
     IntroComponent,
-    ContributorComponent
+    ContribuitorComponent
   ],
   imports: [
     BrowserModule,

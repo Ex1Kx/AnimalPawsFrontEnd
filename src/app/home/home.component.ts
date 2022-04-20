@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faMoon } from '@fortawesome/free-solid-svg-icons'; 
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faWrench } from '@fortawesome/free-solid-svg-icons';
+import { faHashtag } from '@fortawesome/free-solid-svg-icons';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { faF } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
@@ -14,11 +16,13 @@ import { from } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  faHouse = faHouse;
-  faAddressCard = faAddressCard;
-  faNewspaper = faNewspaper;
+  faLanguage = faLanguage;
+  faMoon = faMoon;
   faUser = faUser;
-  faEyeSlash = faEyeSlash;
+  faNewspaper = faNewspaper;
+  faWrench = faWrench;
+  faHashtag = faHashtag;
+  faEyeslash = faEyeSlash;
   faF = faF;
 
   constructor(public translate:TranslateService, private _CargarScripts:CargarScriptsService ) {

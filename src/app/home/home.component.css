@@ -169,7 +169,7 @@ p {
   padding-left: 0;
 }
 
-/* HE ADER */
+/* HEADER */
 
 .logo {
   display: block;
@@ -198,7 +198,7 @@ h1 {
   font-family: 'Lato', sans-serif;
   border-bottom: 1px solid rgb(220, 220, 220);
   border-top: 1px solid rgb(220, 220, 220);
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .top-row {
@@ -301,7 +301,7 @@ h1 {
 
 .main-nav a {
   padding: 15px 20px;
-  font-size: 1.3rem;
+  font-size: 170%;
   font-weight: 200;
   text-transform: uppercase;
   white-space: nowrap;
@@ -727,8 +727,8 @@ input:focus {
 }
 
 .base-btn:hover {
-  color: #c9a16e;
-  box-shadow: inset 0px -1px #1fa2ff;
+  color: #1fa2ff;
+  box-shadow: inset 0px -1px #fff;
 }
 
 .editorial .post-title {
@@ -1160,4 +1160,9 @@ a:hover,
   background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+a{
+  transition: all .5s ease;
+
 }

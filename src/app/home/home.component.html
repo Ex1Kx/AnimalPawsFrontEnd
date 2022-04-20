@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+  <header class="page-header">
+    <div class="top-row">
+      <div class="menu-wrap">
+        <a href="#" class="menu-switcher" aria-label="Toggle main menu">
+        </a>
+      </div>
+      <div class="logo-wrap">
+        <a href="#" class="logo">
+          <img class="logo" src="../../assets/img/logo.png" alt="AP LOGO">
+        </a>
+      </div>
+      <nav class="top-row-toolbar">
+        <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
+        <a><button (click)="changeLanguage('en')" class="btnlang"><fa-icon [icon]="faLanguage"></fa-icon></button></a>
+        <a routerLink="/SignUp"><fa-icon [icon]="faUser"></fa-icon></a>
+      </nav>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-slider">
+      <div class="container">
+          <div class="hero-slider-visual">
+            <div class="hero-image"> </div>
+            <div class="new-badge">
+            </div>
+            <div class="slider-content">
+              <h2 class="title">{{"AFTU" | translate}}</h2>
+              <h2 class="title">{{"WITTH" | translate}}</h2>
+              <p class="desc">{{"FUTTLOH" | translate}}</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="featured-stories">
+      <div class="container">
+        <ul class="featured-list">
+          <li>
+            <p class="slide-date">1.0</p>
+            <div class="featured-article poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/1.0.png"></a>
+              <span class="video-duration">30/11/2021</span>
+            </div>
+            <h3 class="slide-title"><a href="#">{{"UD" | translate}} 1.0</a></h3>
+          </li>
+          <li>
+            <p class="slide-date">2.0</p>
+            <div class="featured-article poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/2.0.PNG"></a>
+              <span class="video-duration">05/12/2021</span>
+            </div>
+            <h3 class="slide-title"><a href="#">{{"UD" | translate}} 2.0</a></h3>
+          </li>
+          <li>
+            <p class="slide-date ">2.1</p>
+            <div class="featured-article poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/2.1.png"></a>
+              <span class="video-duration">04/02/2022</span>
+            </div>
+            <h3 class="slide-title"><a href="#">{{"UD" | translate}} 2.1</a></h3>
+          </li>
+          <li>
+            <p class="slide-date ">3.0</p>
+            <div class="featured-article poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/3.0.PNG"></a>
+              <span class="video-duration">01/03/2022</span>
+            </div>
+            <h3 class="slide-title"><a href="#">{{"UD" | translate}} 3.0</a></h3>
+          </li>
+          <li>
+            <p class="slide-date ">4.0</p>
+            <div class="featured-article poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/4.0.png"></a>
+              <span class="video-duration">17/04/2022</span>
+            </div>
+            <h3 class="slide-title"><a href="#">{{"UD" | translate}} 4.0</a>
+            </h3>
+          </li>
+          <li>
+        </ul>
+      </div>
+    </section>
+    <section class="performance-space">
+      <div class="container">
+        <header class="module-header">
+          <h2>{{"FUC" | translate}}</h2>
+          <span class="sub-title">{{"FUCL" | translate}}</span>
+        </header>
+        <ul class="articles">
+          <li class="article ">
+            <div class="poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/posts.png"></a>
+            </div>
+            <h3 class="post-title"><a href="#">{{"POS" | translate}}</a></h3>
+            <p>{{"POST" | translate}}</p>
+          </li>
+          <li class="article ">
+            <div class="poster-container">
+              <a href="#"><img class="poster"src="../../assets/img/roles.png"></a>
+            </div>
+            <h3 class="post-title"><a href="#">{{"ROL" | translate}}</a></h3>
+            <p>{{"ROLE" | translate}}</p>
+          </li>
+          <li class="article">
+            <div class="poster-container">
+              <a href="#"><img class="poster" src="../../assets/img/chat.png"></a>
+            </div>
+            <h3 class="post-title"><a href="#">{{"CHAT" | translate}}</a></h3>
+            <p>{{"CHATS" | translate}}</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class='award-winning'>
+      <div class="container">
+        <header class="module-header">
+          <h2 class>{{"VIDD" | translate}}</h2>  
+          <span class="sub-title">{{"VIDL" | translate}}</span>
+        </header>
+        <ul class="articles">
+          <li class="article">
+            <div class="poster-container">
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
+              <span class="video-duration">03:47</span>
+            </div>
+            <h3 class="post-title"><a href="#">{{"VD" | translate}}</a></h3>
+          </li>
+          <li class="article">
+            <div class="poster-container">
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
+              <span class="video-duration">05:45</span>
+            </div>
+            <h3 class="post-title"><a>{{"VDDDD" | translate}}</a></h3>
+          </li>
+          <li class="article">
+            <div class="poster-container">
+              <a href="#"><video class="poster" src="../../assets/img/Temp.mp4" autoplay muted></video></a>
+              <span class="video-duration">14:46</span>
+            </div>
+            <h3 class="post-title"><a href="#">{{"VDDD" | translate}}</a></h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="container">
+        <header class="module-header">
+          <h2 class>{{"SC" | translate}}</h2>
+          <span class="sub-title">{{"SCC" | translate}}</span>
+        </header>
+        <form>
+          <input type="email" name="email" maxlength="40" required placeholder="Email">
+          <div class="opt-in">
+            <div>
+              <input type="checkbox" id="toggle" class="checkbox" name="subscribe">
+              <label for="toggle" class="switch" name="subscribe"></label>
+              <span>{{"SCS" | translate}}</span>
+            </div>
+            <div>
+              <input type="checkbox" id="toggle2" class="checkbox" name="subscribe">
+              <label for="toggle2" class="switch" name="subscribe"></label>
+              <span>{{"SCSC" | translate}}</span>
+            </div>
+          </div>
+          <button class="base-btn newsletter-btn">{{"SS" | translate}}</button>
+        </form>
+      </div>
+    </section>
+    <section class="editorials">
+      <div class="container">
+        <div class="first wrapper">
+          <div class="editorial">
+            <h2 class="module-header">{{"ML" | translate}}</h2>
+            <div class="poster-container">
+              <a href="#">
+                <img class="poster" src="../../assets/img/paw.png">
+              </a>
+            </div>
+            <h3 class="post-title"><a href="#">Patitas Al Rescate</a></h3>
+            <p>{{"PP" | translate}}</p>
+          </div>
+        </div>
+        <div class="second wrapper">
+          <div class="editorial">
+            <h2 class="module-header">{{"ASS" | translate}}</h2>
+            <div class="poster-container">
+              <a href="#">
+                <img class="poster" src="../../assets/img/caty.png">
+              </a>
+            </div>
+            <h3 class="post-title"><a
+                href="#">Mr Rabbit God</a></h3>
+            <p>{{"HLP" | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="follow-us">
+      <div class="container">
+        <h2 class="module-header">{{"SH" | translate}}</h2>
+        <div class="wrapper">
+          <div class="image-container">
+            <a href="#">
+              <img src="images/Facebook embrace.jpg">
+            </a>
+          </div>
+          <div class="follow-prompt">
+            <div class="prompt-text">
+              <h3><a href="#">Facebook</a></h3>
+              <a href='#' class="post-icon"><svg>
+                  <use href="images/sprites.svg#facebook"></use>
+                </svg></a>
+              <p><a href="#">{{"FDD" | translate}}</a></p>
+            </div>
+            <a class="base-btn post-btn" href='#' target='blank' rel='nofollow'>
+              <div class='btn-link'>
+                <span>{{"LK" | translate}}</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="image-container">
+            <a href="#">
+              <img src="">
+            </a>
+          </div>
+          <div class="follow-prompt">
+            <div class="prompt-text">
+              <h3><a href="#">Twitter</a></h3>
+              <a href="#" class="post-icon"><svg>
+                  <use href="images/sprites.svg#youtube"></use>
+                </svg></a>
+              <p><a href="#">{{"LT" | translate}}</a> </p>
+            </div>
+            <a class="base-btn post-btn" href='https://www.youtube.com/user/nowness?sub_confirmation=1' target="blank"
+              rel='nofollow'>
+              <div class='btn-link'>
+                <span>{{"FL" | translate}}</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="join-us">
+      <div class="container">
+        <div class="wrapper">
+          <div class="col">
+            <h2 class="title">{{"SUS" | translate}}</h2>
+            <button class="base-btn post-btn">{{"MB" | translate}}</button>
+            <p class="small-text">{{"AMB" | translate}}<a href="#" class="gold"> {{"SG" | translate}}</a>
+            </p>
+          </div>
+          <div class="col connect media">
+            <h2 class="title">{{"CN" | translate}}</h2>
+            <ul>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#facebook"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#twitter"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#instagram"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#tumblr"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#pinterest"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#youtube"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#vimeo"></use>
+                  </svg></a>
+              </li>
+              <li>
+                <a href="#"><svg>
+                    <use href="images/sprites.svg#wechat"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <ul class="social media">
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#facebook"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#twitter"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#instagram"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#tumblr"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#pinterest"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#youtube"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#vimeo"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#wechat"></use>
+            </svg></a>
+        </li>
+      </ul>
+      <div class="footer-nav-container">
+        <nav class="footer-nav">
+          <a href="#">{{"BCM" | translate}}</a>
+          <a href="#">{{"AUS" | translate}}</a>
+          <a href="#">{{"CUS" | translate}}</a>
+          <a href="#">{{"PRV" | translate}}</a>
+          <a href="#">{{"TRM" | translate}}</a>
+          <a href="#">{{"CTR" | translate}}</a>
+          <a href="#">{{"VDDD" | translate}}</a>
+        </nav>
+      </div>
+      <ul class="footer-bottom">
+        <li>
+          <a href="#">Ⓒ 2022 Animal Paws</a>
+        </li>
+        <li>
+          <a href="#">Ⓒ 2022 Neoritic Jac Devs. {{"COPY" | translate}}</a>
+        <li>
+          <a href="https://github.com/nataliakiselev">{{"DSG" | translate}} Natalia Kiselev</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

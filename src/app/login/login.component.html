@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=}, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+	<div class="menu-btn">
+		<i class="fas fa-bars fa-2x"></i>
+	</div>
+	
+	<header>
+	<div class="ani">
+		<h1 class="APL">ANIMAL PAWS</h1>
+	</div>
+	<div class="DIVAP">
+		<nav>
+			<ul class="ul show">
+				<li><fa-icon [icon]="faHouse"></fa-icon><a routerLink="/Home">{{"Home" | translate}}</a></li>
+				<li><fa-icon [icon]="faAddressCard"></fa-icon><a routerLink="/About">{{"About-us" | translate}}</a></li>
+				<li><fa-icon [icon]="faNewspaper"></fa-icon><a routerLink="/news">{{"News" | translate}}</a></li>
+				<li><fa-icon [icon]="faEyeSlash"></fa-icon><a routerLink="/login">{{"Preview" | translate}}</a></li>
+				<li><fa-icon [icon]="faUser"></fa-icon><a routerLink="/login">{{"Login" | translate}}</a></li>
+			</ul>
+		</nav>
+	</div>
+	</header>
+	<section>
+
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+				<form action="#">
+					<h1>Crea Tu Cuenta</h1>
+					<div class="social-container">
+						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+					</div>
+					<span>O Puedes Usar Tu Correo</span>
+					<input type="text" placeholder="Nombres" />
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Contraseña" />
+					<button class="reload">Registrate</button>
+				</form>
+			</div>
+			<div class="form-container sign-in-container">
+				<form action="#">
+					<h1>Inicia Sesion</h1>
+					<div class="social-container">
+						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+					</div>
+					<span>O Utiliza Tu Cuenta</span>
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Contraseña" />
+					<a href="#">¿Olvidaste Tu Contraseña?</a>
+					<button routerLink="/announcement">Inicia Sesion</button>
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1 class="nover">Hola De Nuevo</h1>
+						<p>¿Ya Tienes Cuenta? Inicia Sesion Ahora</p>
+						<button class="ghost" id="signIn">Iniciar Sesion</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1 class="nover">Por Un Mejor Futuro</h1>
+						<p>Registrate Ahora En Animal Paws Con Tus Datos</p>
+						<button class="ghost" id="signUp">Registrate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
